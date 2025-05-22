@@ -79,7 +79,7 @@ echo "${BLUE}${BOLD}
 
 Lab Task 3.3 Completed
 
-Lab Totally Completed 100% !!!
+Lab Totally Completed !!!
 
 ${RESET}"
 
