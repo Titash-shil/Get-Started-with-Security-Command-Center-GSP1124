@@ -20,6 +20,12 @@ BOLD=`tput bold`
 RESET=`tput sgr0`
 #----------------------------------------------------start--------------------------------------------------#
 
+echo "${GREEN}${BOLD}
+
+Starting Execution 
+
+
+${RESET}"
 
 #gcloud auth list
 #gcloud config list project
